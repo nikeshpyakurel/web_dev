@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>chess</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .chessContainer{
+            box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.159);
+        }
+
+        .chesscol {
+            height: 50px;
+            float: left;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            aspect-ratio: 1;
+            background-color: rgb(201, 201, 201);
+            text-shadow: 0px 0px 24px rgb(255, 255, 255);
+            /* color:; */
+        }
+
+        .chessrow:nth-of-type(even) .chesscol:nth-of-type(even),
+        .chessrow:nth-of-type(odd) .chesscol:nth-of-type(odd) {
+            background: rgb(46, 46, 46);
+        }
+        .black{
+            color: black;
+        }
+        .white {
+            color: white;
+            text-shadow: 0px 0px 24px rgb(0, 0, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="chessContainer">
+        <div class="chessrow">
+            <div class="chesscol white">♜</div>
+            <div class="chesscol white">♞</div>
+            <div class="chesscol white">♝</div>
+            <div class="chesscol white">♚</div>
+            <div class="chesscol white">♛</div>
+            <div class="chesscol white">♝</div>
+            <div class="chesscol white">♞</div>
+            <div class="chesscol white">♜</div>
+        </div>
+        <div class="chessrow">
+            <div class="chesscol white">♟</div>
+            <div class="chesscol white">♟</div>
+            <div class="chesscol white">♟</div>
+            <div class="chesscol white">♟</div>
+            <div class="chesscol white">♟</div>
+            <div class="chesscol white">♟</div>
+            <div class="chesscol white">♟</div>
+            <div class="chesscol white">♟</div>
+        </div>
+        <div class="chessrow">
+            <div class="chesscol"></div>
+            <div class="chesscol"></div>
+            <div class="chesscol"></div>
+            <div class="chesscol"></div>
+            <div class="chesscol"></div>
+            <div class="chesscol"></div>
+            <div class="chesscol"></div>
+            <div class="chesscol"></div>
+        </div>
+        <div class="chessrow">
+            <div class="chesscol"></div>
+            <div class="chesscol"></div>
+            <div class="chesscol"></div>
+            <div class="chesscol"></div>
+            <div class="chesscol"></div>
+            <div class="chesscol"></div>
+            <div class="chesscol"></div>
+            <div class="chesscol"></div>
+        </div>
+        <div class="chessrow">
+            <div class="chesscol"></div>
+            <div class="chesscol"></div>
+            <div class="chesscol"></div>
+            <div class="chesscol"></div>
+            <div class="chesscol"></div>
+            <div class="chesscol"></div>
+            <div class="chesscol"></div>
+            <div class="chesscol"></div>
+        </div>
+        <div class="chessrow">
+            <div class="chesscol"></div>
+            <div class="chesscol"></div>
+            <div class="chesscol"></div>
+            <div class="chesscol"></div>
+            <div class="chesscol"></div>
+            <div class="chesscol"></div>
+            <div class="chesscol"></div>
+            <div class="chesscol"></div>
+        </div>
+        <div class="chessrow">
+            <div class="chesscol black">♟</div>
+            <div class="chesscol black">♟</div>
+            <div class="chesscol black">♟</div>
+            <div class="chesscol black">♟</div>
+            <div class="chesscol black">♟</div>
+            <div class="chesscol black">♟</div>
+            <div class="chesscol black">♟</div>
+            <div class="chesscol black">♟</div>
+        </div>
+        <div class="chessrow">
+            <div class="chesscol black">♜</div>
+            <div class="chesscol black">♞</div>
+            <div class="chesscol black">♝</div>
+            <div class="chesscol black">♚</div>
+            <div class="chesscol black">♛</div>
+            <div class="chesscol black">♝</div>
+            <div class="chesscol black">♞</div>
+            <div class="chesscol black">♜</div>
+        </div>
+    </div>
+
+</body>
+
+</html>
